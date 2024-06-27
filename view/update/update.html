@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="update.css">
+    <title>Update Info</title>
+
+</head>
+<body>
+    <div class="container">
+        <a style="color: #000;float:left;"href="../home/home.php">Home</a>
+        <h1>Update Info</h1>
+        <form action="../../router/router.php" method="post" enctype=multipart/form-data>
+            <div class="form-group">
+                <input type="text" placeholder="Title" name="old_title">
+            </div>
+            <div class="form-group">
+                <input type="file" name="NewImage" accept="image/*" required>
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="New city" name="Newcity">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="New Map" name="NewMap">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="New Description" name="NewDescription">
+            </div>
+            <button class="btn" type="submit" name="update">Update</button>
+        </form>
+    </div>
+</body>
+</html>

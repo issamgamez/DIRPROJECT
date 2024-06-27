@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Upload with Information</title>
+    <link rel="stylesheet" href="upload_form.css">
+</head>
+<body>
+    <form action="../../router/router.php" method="POST" enctype="multipart/form-data">
+        <a style="color: #000;"href="../home/home.php">Home</a>
+        <h1>Image Upload with Information</h1>
+        <input type="file" name="image" accept="image/*" required>
+        <input type="text" name="title" placeholder="Title" required>
+        <input type="text" name="map" placeholder="map" required>
+        <input type="text" name="city" placeholder="city" required>
+        <textarea name="description" placeholder="Description" rows="3"></textarea>
+        <input type="submit" name="upload" value="Upload">
+        
+        <button type="button"><a style="text-decoration: none;color:#fff" href="../update/update.html">UPDATE</a></button>
+        <button type="button"><a style="text-decoration: none;color:#fff" href="../delete/delete.php">DELETE</a></button>
+    </form>
+</body>
+</html>
